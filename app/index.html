@@ -8,9 +8,12 @@
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
   </head>
+  <!-- PhoneListController is in charge of the DOM sub-tree under the <body> element.
+       The expressions `({{phone.name}} and {{phone.snippet}}) are bindings which refer to our app model setup within the controller inside app.js -->
   <body ng-controller="PhoneListController">
 
     <ul>
+      <!-- we are creating a loop here that angular will iterate through repeat our templates for each "phone in phones" -->
       <li ng-repeat="phone in phones">
         <span>{{phone.name}}</span>
         <p>{{phone.snippet}}</p>
