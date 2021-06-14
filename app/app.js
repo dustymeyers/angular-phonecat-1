@@ -5,6 +5,7 @@ var phonecatApp = angular.module('phonecatApp', []);
 
 // Define the `PhoneListController` controller on the `phonecatApp` module
 phonecatApp.controller('PhoneListController', function PhoneListController($scope) {
+  $scope.name = 'world';
   $scope.phones = [
     {
       name: 'Nexus S',
